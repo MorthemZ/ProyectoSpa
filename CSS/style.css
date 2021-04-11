@@ -1,39 +1,29 @@
 body{
-    display: block;
-    color: #20303c;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: #f9fafa;
+    margin: 0; /*hace que nada en el documento tenga margenes */
+    padding: 0; /* hace que no haya espacios entre los bordes y el contenido de los contenedores */
+    /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */
+    font-family: "Times New Roman", Times, serif; /* es el tipo de fuente para las letras */
+    box-sizing: border-box; 
+    /* la propiedad box sizing indica como se debe calcular las medidas de un elemento */
+    /* El valor border-box en el box-sizing hace que el padding y el border
+    pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente */
+    background-image:url(/images/fondospa.jpg);
+    background-size: cover;
 }
 
 header{
-    box-shadow: 0 2px 18px 0 rgba(129,162,182,.2);
     display: flex;
-    box-sizing: border-box;
-    flex-direction: row;
-    align-items: center;
+    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+    /* que hace que los elementos se pongan en fila */
+    /*flex wrap y no wrap */ 
+    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
     justify-content: space-between;
-    height: 72px;
-    padding: 0 48px;
-    background: #fff;
-}
-
-p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;    
-}
-
-div{
-    display: block  ;
+    /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
+    /* space-between hace que los elementos se distribuyan entre el principio, mitad y final del contenedor flex */
+    height: 72px; /* Especifica la altura de un elemento */
+    padding: 0 45px; /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */ 
+   /* Establece todas las propiedades del fondo en una sola declaración abreviada*/
 }
 
 button {
@@ -61,43 +51,25 @@ button {
     text-decoration: none;
 }
 
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-a:-webkit-any-link {
-    cursor: pointer;
-}
 
 .headerizquierda{
     display: flex;
-    box-sizing: border-box;
-    flex-direction: row;
+    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+    /* que hace que los elementos se pongan en fila */
+    /*flex wrap y no wrap */ 
+    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
     align-items: center;
+    /* alig-items sirve para controlar el alineamiento de los elementos en una caja flexible */
 }
 
 .logo{
-    margin-right: 47px;
-    width: 66px;
-    height: 24px;
+    margin-right: 4px;
+    width: 55px;
+    height: 20px;
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 44 17'%3E%3Cdefs%3E%3Cpath id='a' d='M3.698 0H.629v3.656h3.069V0z'/%3E%3Cpath id='c' d='M0 0v16.971h22.884V0H0z'/%3E%3Cpath id='e' d='M16.163 17V0H.596v17h15.567z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(23.347)'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cpath fill='%2320303C' d='M1.826.317C.955.771.63 1.537.63 3.656c0 0 .442-.425 1.097-.66a4.669 4.669 0 001.121-.606c.737-.536.85-1.226.85-2.39 0 0-1.2-.032-1.87.317' mask='url(%23b)'/%3E%3C/g%3E%3Cmask id='d' fill='%23fff'%3E%3Cuse xlink:href='%23c'/%3E%3C/mask%3E%3Cpath fill='%2320303C' d='M20.002.813c-.71.623-.918 1.616-.918 1.616l-2.355 9.063-1.957-7.417c-.19-.79-.534-1.764-1.079-2.423-.693-.84-2.1-.892-2.25-.892-.15 0-1.56.052-2.252.892-.544.66-.888 1.634-1.078 2.423l-1.958 7.417L3.801 2.43s-.208-.993-.919-1.616C1.729-.197 0 .02 0 .02l4.508 16.937s1.487.107 2.232-.27c.977-.496 1.442-.878 2.034-3.182.527-2.055 2.001-8.09 2.138-8.52.069-.211.155-.719.53-.719.384 0 .463.507.53.72.135.43 1.612 6.464 2.139 8.52.592 2.303 1.057 2.685 2.034 3.18.744.378 2.231.271 2.231.271L22.884.02s-1.729-.217-2.882.793' mask='url(%23d)'/%3E%3Cpath fill='%2320303C' d='M27.043 2.785s-.282.433-.925.79c-.413.23-.81.386-1.235.589-.713.34-.906.718-.906 1.295V16.957s1.138.143 1.881-.234c.958-.485 1.178-.953 1.186-3.059V2.785z'/%3E%3Cg transform='translate(27.837)'%3E%3Cmask id='f' fill='%23fff'%3E%3Cuse xlink:href='%23e'/%3E%3C/mask%3E%3Cpath fill='%2320303C' d='M10.443 8.53l5.72-8.454s-2.414-.409-3.61.673c-.764.691-1.62 1.935-1.62 1.935L8.83 5.7c-.102.157-.235.328-.45.328-.212 0-.347-.171-.448-.328L5.826 2.684S4.971 1.44 4.206.75C3.011-.333.596.076.596.076l5.72 8.453-5.704 8.428s2.514.316 3.71-.766c.764-.692 1.504-1.816 1.504-1.816l2.105-3.016c.101-.156.236-.327.449-.327.214 0 .347.17.449.327l2.105 3.016s.784 1.124 1.549 1.816c1.195 1.082 3.665.766 3.665.766l-5.705-8.428z' mask='url(%23f)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat;
     }
+
 
 .logospan{
     opacity: 0;
@@ -139,9 +111,17 @@ a:-webkit-any-link {
 
 .headerderecha{
     display: flex;
+    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+    /* que hace que los elementos se pongan en fila */
+    /*flex wrap y no wrap */ 
+    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
     box-sizing: border-box;
-    flex-direction: row;
+    /* la propiedad box sizing indica como se debe calcular las medidas de un elemento */
+    /* El valor border-box en el box-sizing hace que el padding y el border
+    pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente */
     align-items: center;
+    /* alig-items sirve para controlar el alineamiento de los elementos en una caja flexible */
 }
 
 .buttonderecha{
@@ -149,6 +129,7 @@ a:-webkit-any-link {
     cursor: pointer;
     display: inline-block;
     padding: 0 27px;
+    /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */ 
     height: 42px;
     line-height: 42px;
     border-radius: 21px;
@@ -178,8 +159,147 @@ hr{
     opacity: .5;
 }
 
-/* .imagenesspa{
-    display: flex;
-    justify-content: center;
-} */
 
+/*titulo*/
+
+.cuerpo{ /*aca modifico el titulo y los enlaces*/
+    /*background-color: rgb(238, 250, 250); /*cambia el color de fondo del contenedor del .cuerpo */
+    display: flex;
+    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+    /* que hace que los elementos se pongan en fila */
+    /*flex wrap y no wrap */ 
+    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
+    flex-direction: column;
+    /* use el flex-direction: column porque necesitaba que el titulo quede arriba y los enlaces abajo y con el row no se puede */
+    text-align: center; /* lo use para alinear el texto en el centro de los contenedores */
+}
+
+.cuerpotitle{
+    font-size: 25px;
+    color: rgb(116, 187, 45); /* el color que le coloco a la fuente */
+    padding: 15px; /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */ 
+    height: 50px; /*sirve para establecer la altura de los elementos en el bloque*/
+    display: flex;
+    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+    /* que hace que los elementos se pongan en fila */
+    /*flex wrap y no wrap */ 
+    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
+    align-items: center;
+    /* alig-items sirve para controlar el alineamiento de los elementos en una caja flexible */
+    justify-content:center;
+    /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
+    /* space-between hace que los elementos se distribuyan entre el principio, mitad y final del contenedor flex */
+}
+
+.cuerpotitleimg{
+    margin: 10px; /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
+}
+
+.cuerpotoolbar{    
+    margin-left: auto;  /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
+    margin-right: auto;  /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
+    width: 60%; /* sirve para establecer el ancho de un elemento */
+    display: flex;
+    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+    /* que hace que los elementos se pongan en fila */
+    /*flex wrap y no wrap */ 
+    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
+    justify-content: space-evenly; /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
+    font-size: 10px; /* tamaño de la fuente del elemento */
+}
+
+.enlacetoolbar{
+    background: rgba(202, 201, 201, 0.123);
+    margin: 10px;
+    width: 20%;
+    cursor:pointer;
+}
+
+.imagenesspa{
+    height: 320px;
+    display: flex;   
+}
+
+.spaimagen{
+    width:33.3%;
+    height:auto;   
+    object-fit:cover;
+}
+
+.spaimagen:hover{
+    filter: opacity(.3);
+    transition:all 1s ease-in-out;
+}
+
+
+.prefooter{
+    margin-top: 10px;
+  /*  border: 3px inset rgb(222, 255, 224);*/
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.prefootertitle{
+    color: rgb(116, 187, 45); /* el color que le coloco a la fuente */
+    border-bottom: 1px solid rgb(230, 49, 17);
+    text-align: center;
+
+}
+
+.prefooteruno{
+    font-size: 14px;
+    width: 30%;
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+.lista{
+    font-size: 14px;
+    padding: 1px;
+    list-style: none;
+}
+
+
+.footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-top: 5px dotted rgb(250, 67, 67);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footeruno{
+    color: rgb(58, 109, 6);
+    padding: 25px;
+    font-size: 18px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    height: 60px;
+    width: 60px;
+    color:rgb(116, 187, 45);
+    border: 1px solid rgb(116, 187, 45);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social-media-icon:hover{
+    background: rgb(116, 187, 45);
+    color: #0f1061;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
