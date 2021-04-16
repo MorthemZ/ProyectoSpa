@@ -70,3 +70,10 @@
     color: black;
     filter: drop-shadow(5px 5px 1px #f5b1b1);
 }
+
+.titlecontact{
+    font-size: 25px;
+    color: rgb(116, 187, 45);
+    width: 60%;
+    text-align: center;
+}

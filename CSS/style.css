@@ -7,8 +7,7 @@ body{
     /* la propiedad box sizing indica como se debe calcular las medidas de un elemento */
     /* El valor border-box en el box-sizing hace que el padding y el border
     pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente */
-    background-image:url(/images/fondospa.jpg);
-    background-size: cover;
+    background-image:url(../images/fondospa.jpg);
 }
 
 header{
@@ -51,6 +50,9 @@ button {
     text-decoration: none;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 .headerizquierda{
     display: flex;
@@ -197,7 +199,8 @@ hr{
     margin: 10px; /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
 }
 
-.cuerpotoolbar{    
+.cuerpotoolbar{
+   
     margin-left: auto;  /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
     margin-right: auto;  /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
     width: 60%; /* sirve para establecer el ancho de un elemento */
@@ -208,15 +211,27 @@ hr{
     /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
     /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
     justify-content: space-evenly; /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
-    font-size: 10px; /* tamaño de la fuente del elemento */
+    font-size: 15px; /* tamaño de la fuente del elemento */
+}
+
+.enlacetoolbara{
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size:20px;
+}
+
+.enlacetoolbara:hover{
+    color:rgb(116, 187, 45);
 }
 
 .enlacetoolbar{
     background: rgba(202, 201, 201, 0.123);
-    margin: 10px;
+    margin: 20px;
     width: 20%;
     cursor:pointer;
 }
+
 
 .imagenesspa{
     height: 320px;
