@@ -232,24 +232,6 @@ hr{
     cursor:pointer;
 }
 
-
-.imagenesspa{
-    height: 320px;
-    display: flex;   
-}
-
-.spaimagen{
-    width:33.3%;
-    height:auto;   
-    object-fit:cover;
-}
-
-.spaimagen:hover{
-    filter: opacity(.3);
-    transition:all 1s ease-in-out;
-}
-
-
 .prefooter{
     margin-top: 10px;
   /*  border: 3px inset rgb(222, 255, 224);*/

@@ -1,0 +1,15 @@
+.imagenesspa{
+    height: 320px;
+    display: flex;   
+}
+
+.spaimagen{
+    width:33.3%;
+    height:auto;   
+    object-fit:cover;
+}
+
+.spaimagen:hover{
+    filter: opacity(.3);
+    transition:all 1s ease-in-out;
+}
