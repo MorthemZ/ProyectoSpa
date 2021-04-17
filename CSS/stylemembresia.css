@@ -1,63 +1,63 @@
-.titlememb{
-    border-top: 1px solid rgb(199, 243, 96);;
-    border-bottom: 1px solid rgb(199, 243, 96);
-    display: flex;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    margin-bottom: 15px;
+.titlememb {
+  border-top: 1px solid rgb(199, 243, 96);
+  border-bottom: 1px solid rgb(199, 243, 96);
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.titlemem{
-    font-size: 25px;
-    color: rgb(116, 187, 45);
-    width: 80%;
-    text-align: center;
+.titlemem {
+  font-size: 25px;
+  color: rgb(116, 187, 45);
+  width: 80%;
+  text-align: center;
 }
 
-.imagenesmembresia{
-    display: flex;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 380px;
-    justify-content: space-around;
-    margin-bottom: 15px;
+.imagenesmembresia {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 380px;
+  justify-content: space-around;
+  margin-bottom: 15px;
 }
 
-.membresiaimagen{
-    border-left: 5px solid #82da60;
-    border-top: 5px solid #ddab64;
-    border-bottom: 5px solid #68a0d1;
-    border-right: 5px solid #dd5651;
-    opacity: 0.9;
-    width: 35%;
-    object-fit: cover;     
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1.5s ease;
+.membresiaimagen {
+  border-left: 5px solid #82da60;
+  border-top: 5px solid #ddab64;
+  border-bottom: 5px solid #68a0d1;
+  border-right: 5px solid #dd5651;
+  opacity: 0.9;
+  width: 35%;
+  object-fit: cover;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1.5s ease;
 }
 
-.textomembresia{
-    font-size: 17px;
-    width: 50%;
-    flex-direction: column;
+.textomembresia {
+  font-size: 17px;
+  width: 50%;
+  flex-direction: column;
 }
 
 .membresiaimagen:hover {
-    border-left: 10px solid#f1120b;
-    border-top: 10px solid #0666bb;
-    border-bottom: 10px solid #ff9e16;
-    border-right: 10px solid  #41c70d;
-    opacity:1;
-    margin-right: 25px;
-    width: 50%;
-    height: 100%;
+  border-left: 10px solid#f1120b;
+  border-top: 10px solid #0666bb;
+  border-bottom: 10px solid #ff9e16;
+  border-right: 10px solid #41c70d;
+  opacity: 1;
+  margin-right: 25px;
+  width: 50%;
+  height: 100%;
 }
 
-.footer{
-    margin-top: 35px;
+.footer {
+  margin-top: 35px;
 }

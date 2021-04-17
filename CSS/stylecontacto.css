@@ -1,81 +1,84 @@
-.contactotitle{
-    border-top: 1px solid rgb(199, 243, 96);;
-    border-bottom: 1px solid rgb(199, 243, 96);
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+.contactotitle {
+  border-top: 1px solid rgb(199, 243, 96);
+  border-bottom: 1px solid rgb(199, 243, 96);
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
 
-.mapandform{
-    height: 500px;
-    margin-top: 20px;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
+.mapandform {
+  height: 500px;
+  margin-top: 20px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
-.formulario{
-    display: flex;
-    flex-direction: column;
-    width: 55%;
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
 }
 
-.label{
-    border-radius: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 20px;
-    align-items: center;
-    padding: 5px;
-    margin: 3px;
-    border: 2px solid rgb(116, 187, 45);
-    background: none;
+.label {
+  border-radius: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 20px;
+  align-items: center;
+  padding: 5px;
+  margin: 3px;
+  border: 2px solid rgb(116, 187, 45);
+  background: none;
 }
 
-.map{
-    width: 40%;
-    height:480px;
-    border:2px solid rgb(116, 187, 45);
-    border-radius: 5%;
+.map {
+  width: 40%;
+  height: 480px;
+  border: 2px solid rgb(116, 187, 45);
+  border-radius: 5%;
 }
 
-.labeltwo{
-    border-radius: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 250px;
-    padding: 5px;
-    margin: 3px;
-    border: 2px solid rgb(116, 187, 45);
-    background: none;
-    resize: none;
-
+.labeltwo {
+  border-radius: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 250px;
+  padding: 5px;
+  margin: 3px;
+  border: 2px solid rgb(116, 187, 45);
+  background: none;
+  resize: none;
 }
 
-.enviar{
-    text-align: center;
-    color: #fff;
-    font-size: 32px;
-    background: rgb(116, 187, 45);
-    margin: auto;
-    cursor: pointer;
+.enviar {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  background: rgb(116, 187, 45);
+  margin: auto;
+  cursor: pointer;
 }
 
-.enviar:hover{
-    background:linear-gradient(217deg, rgba(255, 103, 103, 0.8), rgba(255,0,0,0) 70.71%),
-               linear-gradient(127deg, rgba(112, 250, 112, 0.8), rgba(0,255,0,0) 70.71%),
-               linear-gradient(336deg, rgba(92, 92, 250, 0.8), rgba(0,0,255,0) 70.71%);
-    color: black;
-    filter: drop-shadow(5px 5px 1px #f5b1b1);
+.enviar:hover {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 103, 103, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(112, 250, 112, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(92, 92, 250, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  color: black;
+  filter: drop-shadow(5px 5px 1px #f5b1b1);
 }
 
-.titlecontact{
-    font-size: 25px;
-    color: rgb(116, 187, 45);
-    width: 15%;
-    text-align: center;
+.titlecontact {
+  font-size: 25px;
+  color: rgb(116, 187, 45);
+  width: 15%;
+  text-align: center;
 }

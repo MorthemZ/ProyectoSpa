@@ -1,15 +1,15 @@
-.spa_images{
-    display:flex;
-    height: 320px;    
+.spa_images {
+  display: flex;
+  height: 320px;
 }
 
-.spa_picture{
-    height:auto;
-    object-fit: cover;
-    width:33.33%;
+.spa_picture {
+  height: auto;
+  object-fit: cover;
+  width: 33.33%;
 }
 
-.spa_picture:hover{
-    filter: opacity(.3);
-    transition:all 1s ease-in-out;
+.spa_picture:hover {
+  filter: opacity(0.3);
+  transition: all 1s ease-in-out;
 }

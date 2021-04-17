@@ -1,306 +1,303 @@
-body{
-    margin: 0; /*hace que nada en el documento tenga margenes */
-    padding: 0; /* hace que no haya espacios entre los bordes y el contenido de los contenedores */
-    /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */
-    font-family: "Times New Roman", Times, serif; /* es el tipo de fuente para las letras */
-    box-sizing: border-box; 
-    /* la propiedad box sizing indica como se debe calcular las medidas de un elemento */
-    /* El valor border-box en el box-sizing hace que el padding y el border
+body {
+  margin: 0; /*hace que nada en el documento tenga margenes */
+  padding: 0; /* hace que no haya espacios entre los bordes y el contenido de los contenedores */
+  /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */
+  font-family: "Times New Roman", Times, serif; /* es el tipo de fuente para las letras */
+  box-sizing: border-box;
+  /* la propiedad box sizing indica como se debe calcular las medidas de un elemento */
+  /* El valor border-box en el box-sizing hace que el padding y el border
     pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente */
-    background-image:url(../images/fondospa.jpg);
+  background-image: url(../images/fondospa.jpg);
 }
 
-header{
-    display: flex;
-    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
-    /* que hace que los elementos se pongan en fila */
-    /*flex wrap y no wrap */ 
-    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
-    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
-    justify-content: space-between;
-    /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
-    /* space-between hace que los elementos se distribuyan entre el principio, mitad y final del contenedor flex */
-    height: 72px; /* Especifica la altura de un elemento */
-    padding: 0 45px; /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */ 
-   /* Establece todas las propiedades del fondo en una sola declaración abreviada*/
+header {
+  display: flex;
+  /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+  /* que hace que los elementos se pongan en fila */
+  /*flex wrap y no wrap */
+  /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+  /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */
+  justify-content: space-between;
+  /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
+  /* space-between hace que los elementos se distribuyan entre el principio, mitad y final del contenedor flex */
+  height: 72px; /* Especifica la altura de un elemento */
+  padding: 0 45px; /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */
+  /* Establece todas las propiedades del fondo en una sola declaración abreviada*/
 }
 
 button {
-    appearance: auto;
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
-    box-sizing: border-box;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-    text-decoration: none;
+  appearance: auto;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  text-decoration: none;
 }
 
-a:link, a:visited, a:active {
-    text-decoration:none;
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
 }
 
-.headerizquierda{
-    display: flex;
-    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
-    /* que hace que los elementos se pongan en fila */
-    /*flex wrap y no wrap */ 
-    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
-    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
-    align-items: center;
-    /* alig-items sirve para controlar el alineamiento de los elementos en una caja flexible */
+.headerizquierda {
+  display: flex;
+  /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+  /* que hace que los elementos se pongan en fila */
+  /*flex wrap y no wrap */
+  /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+  /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */
+  align-items: center;
+  /* alig-items sirve para controlar el alineamiento de los elementos en una caja flexible */
 }
 
-.logo{
-    margin-right: 4px;
-    width: 55px;
-    height: 20px;
-    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 44 17'%3E%3Cdefs%3E%3Cpath id='a' d='M3.698 0H.629v3.656h3.069V0z'/%3E%3Cpath id='c' d='M0 0v16.971h22.884V0H0z'/%3E%3Cpath id='e' d='M16.163 17V0H.596v17h15.567z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(23.347)'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cpath fill='%2320303C' d='M1.826.317C.955.771.63 1.537.63 3.656c0 0 .442-.425 1.097-.66a4.669 4.669 0 001.121-.606c.737-.536.85-1.226.85-2.39 0 0-1.2-.032-1.87.317' mask='url(%23b)'/%3E%3C/g%3E%3Cmask id='d' fill='%23fff'%3E%3Cuse xlink:href='%23c'/%3E%3C/mask%3E%3Cpath fill='%2320303C' d='M20.002.813c-.71.623-.918 1.616-.918 1.616l-2.355 9.063-1.957-7.417c-.19-.79-.534-1.764-1.079-2.423-.693-.84-2.1-.892-2.25-.892-.15 0-1.56.052-2.252.892-.544.66-.888 1.634-1.078 2.423l-1.958 7.417L3.801 2.43s-.208-.993-.919-1.616C1.729-.197 0 .02 0 .02l4.508 16.937s1.487.107 2.232-.27c.977-.496 1.442-.878 2.034-3.182.527-2.055 2.001-8.09 2.138-8.52.069-.211.155-.719.53-.719.384 0 .463.507.53.72.135.43 1.612 6.464 2.139 8.52.592 2.303 1.057 2.685 2.034 3.18.744.378 2.231.271 2.231.271L22.884.02s-1.729-.217-2.882.793' mask='url(%23d)'/%3E%3Cpath fill='%2320303C' d='M27.043 2.785s-.282.433-.925.79c-.413.23-.81.386-1.235.589-.713.34-.906.718-.906 1.295V16.957s1.138.143 1.881-.234c.958-.485 1.178-.953 1.186-3.059V2.785z'/%3E%3Cg transform='translate(27.837)'%3E%3Cmask id='f' fill='%23fff'%3E%3Cuse xlink:href='%23e'/%3E%3C/mask%3E%3Cpath fill='%2320303C' d='M10.443 8.53l5.72-8.454s-2.414-.409-3.61.673c-.764.691-1.62 1.935-1.62 1.935L8.83 5.7c-.102.157-.235.328-.45.328-.212 0-.347-.171-.448-.328L5.826 2.684S4.971 1.44 4.206.75C3.011-.333.596.076.596.076l5.72 8.453-5.704 8.428s2.514.316 3.71-.766c.764-.692 1.504-1.816 1.504-1.816l2.105-3.016c.101-.156.236-.327.449-.327.214 0 .347.17.449.327l2.105 3.016s.784 1.124 1.549 1.816c1.195 1.082 3.665.766 3.665.766l-5.705-8.428z' mask='url(%23f)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat;
-    }
-
-
-.logospan{
-    opacity: 0;
+.logo {
+  margin-right: 4px;
+  width: 55px;
+  height: 20px;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 44 17'%3E%3Cdefs%3E%3Cpath id='a' d='M3.698 0H.629v3.656h3.069V0z'/%3E%3Cpath id='c' d='M0 0v16.971h22.884V0H0z'/%3E%3Cpath id='e' d='M16.163 17V0H.596v17h15.567z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(23.347)'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cpath fill='%2320303C' d='M1.826.317C.955.771.63 1.537.63 3.656c0 0 .442-.425 1.097-.66a4.669 4.669 0 001.121-.606c.737-.536.85-1.226.85-2.39 0 0-1.2-.032-1.87.317' mask='url(%23b)'/%3E%3C/g%3E%3Cmask id='d' fill='%23fff'%3E%3Cuse xlink:href='%23c'/%3E%3C/mask%3E%3Cpath fill='%2320303C' d='M20.002.813c-.71.623-.918 1.616-.918 1.616l-2.355 9.063-1.957-7.417c-.19-.79-.534-1.764-1.079-2.423-.693-.84-2.1-.892-2.25-.892-.15 0-1.56.052-2.252.892-.544.66-.888 1.634-1.078 2.423l-1.958 7.417L3.801 2.43s-.208-.993-.919-1.616C1.729-.197 0 .02 0 .02l4.508 16.937s1.487.107 2.232-.27c.977-.496 1.442-.878 2.034-3.182.527-2.055 2.001-8.09 2.138-8.52.069-.211.155-.719.53-.719.384 0 .463.507.53.72.135.43 1.612 6.464 2.139 8.52.592 2.303 1.057 2.685 2.034 3.18.744.378 2.231.271 2.231.271L22.884.02s-1.729-.217-2.882.793' mask='url(%23d)'/%3E%3Cpath fill='%2320303C' d='M27.043 2.785s-.282.433-.925.79c-.413.23-.81.386-1.235.589-.713.34-.906.718-.906 1.295V16.957s1.138.143 1.881-.234c.958-.485 1.178-.953 1.186-3.059V2.785z'/%3E%3Cg transform='translate(27.837)'%3E%3Cmask id='f' fill='%23fff'%3E%3Cuse xlink:href='%23e'/%3E%3C/mask%3E%3Cpath fill='%2320303C' d='M10.443 8.53l5.72-8.454s-2.414-.409-3.61.673c-.764.691-1.62 1.935-1.62 1.935L8.83 5.7c-.102.157-.235.328-.45.328-.212 0-.347-.171-.448-.328L5.826 2.684S4.971 1.44 4.206.75C3.011-.333.596.076.596.076l5.72 8.453-5.704 8.428s2.514.316 3.71-.766c.764-.692 1.504-1.816 1.504-1.816l2.105-3.016c.101-.156.236-.327.449-.327.214 0 .347.17.449.327l2.105 3.016s.784 1.124 1.549 1.816c1.195 1.082 3.665.766 3.665.766l-5.705-8.428z' mask='url(%23f)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+    no-repeat;
 }
 
-.buttonone{
-    width: 31px;
-    height: 26px;
-    background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 25 23' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.444 18H2.558A1.56 1.56 0 011 16.441V15h23v1.444c0 .858-.698 1.556-1.556 1.556zM10 22h5v-3h-5v3zM2.558 1h19.886C23.302 1 24 1.698 24 2.556V14H1V2.559C1 1.699 1.7 1 2.558 1zm19.886-1H2.558A2.562 2.562 0 000 2.559v13.882A2.562 2.562 0 002.558 19H9v3H7v1h11v-1h-2v-3h6.444A2.559 2.559 0 0025 16.444V2.556A2.559 2.559 0 0022.444 0z' fill='%231F303C' fill-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-
-    }
-
-.buttontwo{
-    width: 17px;
-    height: 28px;
-    background: url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 15 26' xml:space='preserve'%3E%3Cstyle%3E.st1{fill:%2343515c}%3C/style%3E%3Cpath d='M12 1H3c-1.1 0-2 .9-2 2v20c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zM9 23H6v-1h3v1zm4-4c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h9c.6 0 1 .4 1 1v15z' fill='none'/%3E%3Cpath class='st1' d='M6 22h3v1H6zM12 3H3c-.6 0-1 .4-1 1v15c0 .6.4 1 1 1h9c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1zm0 16H3V4h9v15z'/%3E%3Cpath class='st1' d='M12 0H3C1.3 0 0 1.3 0 3v20c0 1.7 1.3 3 3 3h9c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3zm2 23c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h9c1.1 0 2 .9 2 2v20z'/%3E%3C/svg%3E") no-repeat;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+.logospan {
+  opacity: 0;
 }
 
-.headertitle{
-    margin: 0 24px; 
+.buttonone {
+  width: 31px;
+  height: 26px;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 25 23' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.444 18H2.558A1.56 1.56 0 011 16.441V15h23v1.444c0 .858-.698 1.556-1.556 1.556zM10 22h5v-3h-5v3zM2.558 1h19.886C23.302 1 24 1.698 24 2.556V14H1V2.559C1 1.699 1.7 1 2.558 1zm19.886-1H2.558A2.562 2.562 0 000 2.559v13.882A2.562 2.562 0 002.558 19H9v3H7v1h11v-1h-2v-3h6.444A2.559 2.559 0 0025 16.444V2.556A2.559 2.559 0 0022.444 0z' fill='%231F303C' fill-rule='evenodd'/%3E%3C/svg%3E")
+    no-repeat;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
-.sabermas{
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    background: transparent;
-    font-size: 14px;
-    text-decoration: underline;
-    font-weight: 300;
-    color: #20303c;
+.buttontwo {
+  width: 17px;
+  height: 28px;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 15 26' xml:space='preserve'%3E%3Cstyle%3E.st1{fill:%2343515c}%3C/style%3E%3Cpath d='M12 1H3c-1.1 0-2 .9-2 2v20c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zM9 23H6v-1h3v1zm4-4c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1h9c.6 0 1 .4 1 1v15z' fill='none'/%3E%3Cpath class='st1' d='M6 22h3v1H6zM12 3H3c-.6 0-1 .4-1 1v15c0 .6.4 1 1 1h9c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1zm0 16H3V4h9v15z'/%3E%3Cpath class='st1' d='M12 0H3C1.3 0 0 1.3 0 3v20c0 1.7 1.3 3 3 3h9c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3zm2 23c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h9c1.1 0 2 .9 2 2v20z'/%3E%3C/svg%3E")
+    no-repeat;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
-.headerderecha{
-    display: flex;
-    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
-    /* que hace que los elementos se pongan en fila */
-    /*flex wrap y no wrap */ 
-    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
-    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
-    box-sizing: border-box;
-    /* la propiedad box sizing indica como se debe calcular las medidas de un elemento */
-    /* El valor border-box en el box-sizing hace que el padding y el border
+.headertitle {
+  margin: 0 24px;
+}
+
+.sabermas {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: 300;
+  color: #20303c;
+}
+
+.headerderecha {
+  display: flex;
+  /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+  /* que hace que los elementos se pongan en fila */
+  /*flex wrap y no wrap */
+  /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+  /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */
+  box-sizing: border-box;
+  /* la propiedad box sizing indica como se debe calcular las medidas de un elemento */
+  /* El valor border-box en el box-sizing hace que el padding y el border
     pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente */
-    align-items: center;
-    /* alig-items sirve para controlar el alineamiento de los elementos en una caja flexible */
+  align-items: center;
+  /* alig-items sirve para controlar el alineamiento de los elementos en una caja flexible */
 }
 
-.buttonderecha{
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 27px;
-    /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */ 
-    height: 42px;
-    line-height: 42px;
-    border-radius: 21px;
-    text-align: center;
-    color: #fff;
-    background: #116dff;
-    white-space: nowrap;
-    text-decoration: none;
-    margin: 0 40px;
-    margin-right: 0;
+.buttonderecha {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 27px;
+  /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */
+  height: 42px;
+  line-height: 42px;
+  border-radius: 21px;
+  text-align: center;
+  color: #fff;
+  background: #116dff;
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 0 40px;
+  margin-right: 0;
 }
 
-.buttons{
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: row;
-    align-items: center;
+.buttons {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
 }
 
-hr{
-    margin: 0 25px;
-    height: 25px;
-    border-left: none;
-    border-bottom: none;
-    border-top: none;
-    border-color: #20303c;
-    opacity: .5;
+hr {
+  margin: 0 25px;
+  height: 25px;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  border-color: #20303c;
+  opacity: 0.5;
 }
-
 
 /*titulo*/
 
-.cuerpo{ /*aca modifico el titulo y los enlaces*/
-    /*background-color: rgb(238, 250, 250); /*cambia el color de fondo del contenedor del .cuerpo */
-    display: flex;
-    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
-    /* que hace que los elementos se pongan en fila */
-    /*flex wrap y no wrap */ 
-    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
-    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
-    flex-direction: column;
-    /* use el flex-direction: column porque necesitaba que el titulo quede arriba y los enlaces abajo y con el row no se puede */
-    text-align: center; /* lo use para alinear el texto en el centro de los contenedores */
+.cuerpo {
+  /*aca modifico el titulo y los enlaces*/
+  /*background-color: rgb(238, 250, 250); /*cambia el color de fondo del contenedor del .cuerpo */
+  display: flex;
+  /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+  /* que hace que los elementos se pongan en fila */
+  /*flex wrap y no wrap */
+  /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+  /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */
+  flex-direction: column;
+  /* use el flex-direction: column porque necesitaba que el titulo quede arriba y los enlaces abajo y con el row no se puede */
+  text-align: center; /* lo use para alinear el texto en el centro de los contenedores */
 }
 
-.cuerpotitle{
-    font-size: 25px;
-    color: rgb(116, 187, 45); /* el color que le coloco a la fuente */
-    padding: 15px; /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */ 
-    height: 50px; /*sirve para establecer la altura de los elementos en el bloque*/
-    display: flex;
-    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
-    /* que hace que los elementos se pongan en fila */
-    /*flex wrap y no wrap */ 
-    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
-    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
-    align-items: center;
-    /* alig-items sirve para controlar el alineamiento de los elementos en una caja flexible */
-    justify-content:center;
-    /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
-    /* space-between hace que los elementos se distribuyan entre el principio, mitad y final del contenedor flex */
+.cuerpotitle {
+  font-size: 25px;
+  color: rgb(116, 187, 45); /* el color que le coloco a la fuente */
+  padding: 15px; /* Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor */
+  height: 50px; /*sirve para establecer la altura de los elementos en el bloque*/
+  display: flex;
+  /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+  /* que hace que los elementos se pongan en fila */
+  /*flex wrap y no wrap */
+  /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+  /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */
+  align-items: center;
+  /* alig-items sirve para controlar el alineamiento de los elementos en una caja flexible */
+  justify-content: center;
+  /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
+  /* space-between hace que los elementos se distribuyan entre el principio, mitad y final del contenedor flex */
 }
 
-.cuerpotitleimg{
-    margin: 10px; /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
+.cuerpotitleimg {
+  margin: 10px; /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
 }
 
-.cuerpotoolbar{
-   
-    margin-left: auto;  /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
-    margin-right: auto;  /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
-    width: 60%; /* sirve para establecer el ancho de un elemento */
-    display: flex;
-    /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
-    /* que hace que los elementos se pongan en fila */
-    /*flex wrap y no wrap */ 
-    /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
-    /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */ 
-    justify-content: space-evenly; /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
-    font-size: 15px; /* tamaño de la fuente del elemento */
+.cuerpotoolbar {
+  margin-left: auto; /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
+  margin-right: auto; /* es el margen que hay desde un elemento  hasta lo q tenga al lado */
+  width: 60%; /* sirve para establecer el ancho de un elemento */
+  display: flex;
+  /* hace que el contenido crezca horizontalmente, por defecto trae el estilo flex-direction:row*/
+  /* que hace que los elementos se pongan en fila */
+  /*flex wrap y no wrap */
+  /* flex no wrap no ajusta los elementos, los mantiene como estan es el valor x defecto de display flex */
+  /* flex wrap hace que los elementos mantengan las medidas que le damos y si no entran se genera una nueva fila abajo */
+  justify-content: space-evenly; /* justify-content: es una propiedad del  contenedor flex y sirve para acomodar sus elementos */
+  font-size: 15px; /* tamaño de la fuente del elemento */
 }
 
-.enlacetoolbara{
-    align-items: center;
-    text-align: center;
-    color: black;
-    font-size:20px;
+.enlacetoolbara {
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-size: 20px;
 }
 
-.enlacetoolbara:hover{
-    color:rgb(116, 187, 45);
+.enlacetoolbara:hover {
+  color: rgb(116, 187, 45);
 }
 
-.enlacetoolbar{
-    background: rgba(202, 201, 201, 0.123);
-    margin: 20px;
-    width: 20%;
-    cursor:pointer;
+.enlacetoolbar {
+  background: rgba(202, 201, 201, 0.123);
+  margin: 20px;
+  width: 20%;
+  cursor: pointer;
 }
 
-.prefooter{
-    margin-top: 10px;
+.prefooter {
+  margin-top: 10px;
   /*  border: 3px inset rgb(222, 255, 224);*/
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
-.prefootertitle{
-    color: rgb(116, 187, 45); /* el color que le coloco a la fuente */
-    border-bottom: 1px solid rgb(230, 49, 17);
-    text-align: center;
-
+.prefootertitle {
+  color: rgb(116, 187, 45); /* el color que le coloco a la fuente */
+  border-bottom: 1px solid rgb(230, 49, 17);
+  text-align: center;
 }
 
-.prefooteruno{
-    font-size: 14px;
-    width: 30%;
-    padding: 20px;
-    text-align: justify;
-    
+.prefooteruno {
+  font-size: 14px;
+  width: 30%;
+  padding: 20px;
+  text-align: justify;
 }
 
-.lista{
-    font-size: 14px;
-    padding: 1px;
-    list-style: none;
+.lista {
+  font-size: 14px;
+  padding: 1px;
+  list-style: none;
 }
-
-
-
 
 /*footer*/
 
-.footer{
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    border-top: 5px dotted rgb(250, 67, 67);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-top: 5px dotted rgb(250, 67, 67);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.footeruno{
-    color: rgb(58, 109, 6);
-    padding: 25px;
-    font-size: 18px;
+.footeruno {
+  color: rgb(58, 109, 6);
+  padding: 25px;
+  font-size: 18px;
 }
 
-.social-media-icon{
-    display: inline-block;
-    margin-left: 20px;
-    height: 60px;
-    width: 60px;
-    color:rgb(116, 187, 45);
-    border: 1px solid rgb(116, 187, 45);
-    border-radius: 50%;
-    text-align: center;
+.social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  height: 60px;
+  width: 60px;
+  color: rgb(116, 187, 45);
+  border: 1px solid rgb(116, 187, 45);
+  border-radius: 50%;
+  text-align: center;
 }
 
-.social-media-icon:hover{
-    background: rgb(116, 187, 45);
-    color: #0f1061;
+.social-media-icon:hover {
+  background: rgb(116, 187, 45);
+  color: #0f1061;
 }
 
-.social-media-icon i{
-    font-size: 30px;
-    line-height: 60px;
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
 }
