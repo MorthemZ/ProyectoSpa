@@ -14,30 +14,29 @@
   transition: all 1s ease-in-out;
 }
 
-
-.prefooter {
-  margin-top: 10px;
+.container_philosophy_offers_schedules {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   width: 70%;
 }
 
-.prefootertitle {
-  color: rgb(116, 187, 45); /* el color que le coloco a la fuente */
+.title_central_content {
   border-bottom: 1px solid rgb(230, 49, 17);
+  color: rgb(116, 187, 45); /* el color que le coloco a la fuente */
   text-align: center;
 }
 
-.prefooteruno {
+.content_central {
   font-size: 14px;
-  width: 30%;
   padding: 20px;
   text-align: justify;
+  width: 30%;
 }
 
-.lista {
+.schedule_list {
   font-size: 14px;
-  padding: 1px;
   list-style: none;
+  padding: 1px;
 }

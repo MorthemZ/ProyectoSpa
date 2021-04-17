@@ -1,18 +1,37 @@
-.imagenesspa {
+.sanctuary_title {
+  color: rgb(116, 187, 45);
+  font-size: 25px;
+  margin-right: 50px;
+  text-align: center;
+  width: 90%;
+}
+
+.sanctuary_content {
+  align-items: center;
+  border-top: 1px solid rgb(199, 243, 96);
+  border-bottom: 1px solid rgb(199, 243, 96);
+  display: flex;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  height: 800px;
+}
+
+.golden_knights_images {
   display: flex;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
-.spaimagen {
+.knight_of_athena {
   height: 23%;
-  width: 33%;
   object-fit: cover;
+  width: 33%;
 }
 
-.spaimagen:hover {
+.knight_of_athena:hover {
   -webkit-transform: rotateY(180deg);
   -webkit-transform-style: preserve-3d;
   transform: rotateY(180deg);
@@ -21,23 +40,4 @@
   filter: drop-shadow(
     0 -6mm 25mm rgb(226, 2, 2)
   ); /* sirve para darle un sombreado a la imagen */
-}
-
-.titlespa {
-  font-size: 25px;
-  color: rgb(116, 187, 45);
-  width: 90%;
-  text-align: center;
-  margin-right: 50px;
-}
-
-.titlespacontenido {
-  border-top: 1px solid rgb(199, 243, 96);
-  border-bottom: 1px solid rgb(199, 243, 96);
-  display: flex;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  margin-bottom: 25px;
 }

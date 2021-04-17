@@ -51,7 +51,7 @@ button {
   border-width: 2px;
   box-sizing: border-box;
   display: inline-block;
-  font: 400 13.3333px Arial;  
+  font: 400 13.3333px Arial;
   letter-spacing: normal;
   margin: 0em;
   padding: 1px 6px;
@@ -61,7 +61,7 @@ button {
   text-rendering: auto;
   text-shadow: none;
   text-transform: none;
-  word-spacing: normal; 
+  word-spacing: normal;
 }
 
 /* Estilo para los elementos a con pseudoselectores */

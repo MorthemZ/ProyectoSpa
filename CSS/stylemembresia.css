@@ -1,4 +1,4 @@
-.titlememb {
+.membership_container {
   border-top: 1px solid rgb(199, 243, 96);
   border-bottom: 1px solid rgb(199, 243, 96);
   display: flex;
@@ -9,53 +9,53 @@
   margin-bottom: 15px;
 }
 
-.titlemem {
+.membership_title {
   font-size: 25px;
   color: rgb(116, 187, 45);
   width: 80%;
   text-align: center;
 }
 
-.imagenesmembresia {
+.membership_image_phrases {
   display: flex;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
   height: 380px;
   justify-content: space-around;
   margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
-.membresiaimagen {
-  border-left: 5px solid #82da60;
-  border-top: 5px solid #ddab64;
+.membership_image {
   border-bottom: 5px solid #68a0d1;
+  border-left: 5px solid #82da60;
   border-right: 5px solid #dd5651;
-  opacity: 0.9;
-  width: 35%;
+  border-top: 5px solid #ddab64;
   object-fit: cover;
+  opacity: 0.9;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1.5s ease;
+  width: 35%;
 }
 
-.textomembresia {
+.membership_image:hover {
+  border-bottom: 10px solid #ff9e16;
+  border-left: 10px solid#f1120b;
+  border-right: 10px solid #41c70d;
+  border-top: 10px solid #0666bb;
+  height: 100%;
+  margin-right: 25px;
+  opacity: 1;
+  width: 50%;
+}
+
+.membership_phrases {
+  flex-direction: column;
   font-size: 17px;
   width: 50%;
-  flex-direction: column;
-}
-
-.membresiaimagen:hover {
-  border-left: 10px solid#f1120b;
-  border-top: 10px solid #0666bb;
-  border-bottom: 10px solid #ff9e16;
-  border-right: 10px solid #41c70d;
-  opacity: 1;
-  margin-right: 25px;
-  width: 50%;
-  height: 100%;
 }
 
 .footer {
