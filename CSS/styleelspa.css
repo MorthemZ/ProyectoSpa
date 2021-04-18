@@ -41,3 +41,37 @@
     0 -6mm 25mm rgb(226, 2, 2)
   ); /* sirve para darle un sombreado a la imagen */
 }
+
+@media screen and (max-width: 1024px) {
+
+  .sanctuary_content{
+    width: 80%;
+  }
+
+
+  .golden_knights_images {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .golden_knights_images {
+    width: 85%;
+  }
+
+  .knight_of_athena {
+    width: 32%;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .golden_knights_images {
+    width: 95%;
+  }
+
+  .knight_of_athena {
+    width: 30%;
+  }
+}

@@ -41,29 +41,6 @@ hr {
   opacity: 0.5;
 }
 
-/* Estilo para los elementos  button*/
-
-button {
-  align-items: flex-start;
-  appearance: auto;
-  border-image: initial;
-  border-style: outset;
-  border-width: 2px;
-  box-sizing: border-box;
-  display: inline-block;
-  font: 400 13.3333px Arial;
-  letter-spacing: normal;
-  margin: 0em;
-  padding: 1px 6px;
-  text-align: center;
-  text-decoration: none;
-  text-indent: 0px;
-  text-rendering: auto;
-  text-shadow: none;
-  text-transform: none;
-  word-spacing: normal;
-}
-
 /* Estilo para los elementos a con pseudoselectores */
 
 a:link,
@@ -300,4 +277,97 @@ a:active {
 .social_media_icon i {
   font-size: 30px; /*cambia el tamaño de la fuente*/
   line-height: 60px; /*La propiedad define la altura de línea de un párrafo, la use para centrar los iconos*/
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    header {
+     height: 100px;
+    }
+
+    .link_container {
+      width: 15%;
+    } 
+
+    .footer{
+      width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {  
+  .span_logo {
+    margin: -10px;
+  }
+  
+  .edit_link {
+    line-height: 25px;
+  }
+
+  .menu_container {
+    width: 90%; /* sirve para establecer el ancho de un elemento */
+  }
+
+  .footer {
+    width: 90%;
+  }
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+  header {
+    padding: 0;
+  }
+  
+  hr {
+    height: 25px;
+    margin: 10px;
+  }
+  
+  .span_logo {
+    margin: -20px;
+  }
+  /* Logo de Wix */
+  
+  .logo {
+    width: 50px;
+  }
+  
+  .button_computer {
+    height: 22px;
+
+  }
+  
+  .button_mobile {
+    height: 25px;
+  }
+
+  .header_phrase {
+    margin: 0 15px;
+  }
+
+  .edit_link {
+  
+    border-radius: 10px;
+    line-height: 10px;
+    margin: 10px;
+
+    padding: 5px;
+  }
+
+  .menu_container {
+    width: 95%;
+  }
+  
+  .footer {
+    width: 95%;
+  }
+
+  .main_title{
+    font-size: 17px;
+  }
+
 }

@@ -61,3 +61,57 @@
 .footer {
   margin-top: 35px;
 }
+
+@media screen and (max-width: 1024px) {
+  .membership_container {
+    width: 80%;
+  }
+
+  .membership_title {
+    width: 90%;
+  }
+
+  .membership_image_phrases {
+    width: 80%;
+  }
+
+  .membership_phrases {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .membership_container {
+    width: 90%;
+  }
+
+  .membership_title {
+    width: 95%;
+  }
+
+  .membership_image_phrases {
+    width: 90%;
+  }
+
+  .membership_phrases {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .membership_container {
+    width: 95%;
+  }
+
+  .membership_title {
+    width: 98%;
+  }
+
+  .membership_image_phrases {
+    width: 95%;
+  }
+
+  .membership_phrases {
+    font-size: 10px;
+  }
+}

@@ -82,3 +82,37 @@
   color: black;
   filter: drop-shadow(5px 5px 1px #f5b1b1);
 }
+
+
+@media screen and (max-width: 1024px) {
+
+  .title_contact_us_container{
+    width: 80%;
+  }
+
+  .map_form{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .title_contact_us_container{
+    width: 90%;
+  }
+
+  .map_form{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .title_contact_us_container{
+    width: 95%;
+  }
+
+  .map_form{
+    width: 95%;
+  }
+}

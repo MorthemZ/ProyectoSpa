@@ -40,3 +40,35 @@
   list-style: none;
   padding: 1px;
 }
+
+
+@media screen and (max-width: 1024px) {
+
+  .container_philosophy_offers_schedules {
+    width: 80%;
+  }
+
+  .title_central_content{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container_philosophy_offers_schedules {
+    width: 90%;
+  } 
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .container_philosophy_offers_schedules {
+    width: 95%;
+  } 
+
+  .content_central {
+    padding: 5px;
+  }
+
+}

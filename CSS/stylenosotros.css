@@ -5,7 +5,7 @@
   display: flex;
   margin-bottom: 15px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   width: 70%;
 }
 
@@ -54,6 +54,7 @@
   -o-transition: all 0.5s ease;
   height: 380px;
   width: 50%;
+  object-fit: cover;
 }
 
 .flex_image:hover {
@@ -72,4 +73,59 @@
   margin-right: auto;
   margin-top: 10px;
   width: 70%;
+}
+
+@media screen and (max-width: 1024px) {
+  .container_title_phrase {
+    width: 80%;
+  }
+
+  .title_us {
+    width: 90%;
+  }
+
+  .images_about_us {
+    width: 80%;
+  }
+
+  .useful_phrases {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container_title_phrase {
+    width: 90%;
+  }
+
+  .title_us {
+    width: 95%;
+  }
+
+  .images_about_us {
+    width: 90%;
+  }
+
+  .useful_phrases {
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .container_title_phrase {
+    width: 95%;
+  }
+
+  .title_us {
+    width: 98%;
+  }
+
+  .images_about_us {
+    width: 95%;
+  }
+
+  .useful_phrases {
+    width: 95%;
+  }
 }
