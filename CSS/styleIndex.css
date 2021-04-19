@@ -41,6 +41,9 @@
   padding: 1px;
 }
 
+.content_central .mob_spa_container {
+  display: none; /* Display none oculta */
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -48,7 +51,7 @@
     width: 80%;
   }
 
-  .title_central_content{
+  .title_central_content {
     font-size: 17px;
   }
 }
@@ -57,7 +60,18 @@
 
   .container_philosophy_offers_schedules {
     width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
   } 
+
+  .content_central {
+    padding: 10px;
+    min-width: 210px;
+  }
+
+  .content_central .title_central_content > h2 {
+    font-size: 15px;
+  }
 
 }
 
@@ -65,10 +79,32 @@
 
   .container_philosophy_offers_schedules {
     width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   } 
+
+  .spa_images {
+    display: none;
+  }
 
   .content_central {
     padding: 5px;
+    width: 90%;
+  }
+
+  .content_central .mob_spa_container {
+    display: block; /* Display muestra el contenido */
+    width: 100%;
+  }
+
+  .content_central .mob_spa_container > img {
+    width: 100%;
+  }
+
+  .content_central .title_central_content > h2 {
+    font-size: 20px;
   }
 
 }

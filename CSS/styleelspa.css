@@ -56,6 +56,13 @@
 
 
 @media screen and (max-width: 768px) {
+
+  .sanctuary_content {    
+    width: 80%;
+    display: flex;
+    flex-direction: column;    
+  }
+
   .golden_knights_images {
     width: 85%;
   }
